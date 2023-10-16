@@ -1,0 +1,37 @@
+function submitForm() {
+            
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var dob = document.getElementById('dob').value;
+    var country = document.getElementById('country').value;
+    var gender = document.querySelector('input[name="gender"]:checked');
+    var profession = document.getElementById('profession').value;
+    var email = document.getElementById('email').value;
+    var mobile = document.getElementById('mobile').value;
+
+   
+    if (!gender) {
+        alert("Please select a gender.");
+        return;
+    }
+
+   
+    var message = "First Name: " + firstName + "\n" +
+                  "Last Name: " + lastName + "\n" +
+                  "Date of Birth: " + dob + "\n" +
+                  "Country: " + country + "\n" +
+                  "Gender: " + gender.value + "\n" +
+                  "Profession: " + profession + "\n" +
+                  "Email: " + email + "\n" +
+                  "Mobile Number: " + mobile;
+
+   
+    alert(message);
+
+    
+    document.getElementById('surveyForm').reset();
+}
+
+function resetForm() {
+    document.getElementById('surveyForm').reset();
+}
