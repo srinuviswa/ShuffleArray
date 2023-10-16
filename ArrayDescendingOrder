@@ -1,0 +1,5 @@
+let arr=[10,20,30,40,60,50,90,70,80]
+let x=arr.sort((num1,num2)=>{
+    return num2-num1
+})
+console.log(x)
